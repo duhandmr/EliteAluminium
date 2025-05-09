@@ -1,0 +1,21 @@
+.navbar {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+    a {
+      color: #fff;
+      line-height: 1em;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    a:hover {
+      border-bottom: 1px solid var(--alternative);
+      transition: all 0.4s ease;
+      padding-bottom: 1rem;
+    }
+  }
+}

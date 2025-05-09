@@ -1,0 +1,42 @@
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  text-align: center;
+  font-size: 0.75rem;
+  padding-inline: 1rem;
+  color: #333;
+  font-weight: bold;
+
+  &__left {
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--link-color, #145389);
+      text-decoration: none;
+      border-radius: 1rem;
+      padding: 0.3rem 0.6rem;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: var(--link-hover-bg, #e0e0e0);
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 0.7rem;
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3rem;
+      svg {
+        color: var(--link-color, #145389);
+      }
+    }
+  }
+}
